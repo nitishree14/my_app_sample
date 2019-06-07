@@ -90,19 +90,94 @@ class second_calc extends JFrame implements ActionListener
     
     public void actionPerformed(ActionEvent e) 
    { 
-    	String text = one.getText();
-        t1.setText(text);
-      int s1=Integer.parseInt(t1.setText(text)); 
+    	//String text = one.getText();
+        //t1.setText(text);
+     /* int s1=Integer.parseInt(t1.setText(text)); 
       int s2=Integer.parseInt(t2.getText()); 
       
-      
-       if(e.getSource()==add) 
+      */
+       if(e.getSource()==one) 
        { 
-           s3=s1+s2; 
-      System.out.println(s3); 
-       t3.setText(Integer.toString(s3)); 
+    	   String text = one.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
        } 
-       else if(e.getSource()==sub) 
+       else if(e.getSource()==two) 
+       { 
+    	   String text = two.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==three) 
+       { 
+    	   String text = three.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==four) 
+       { 
+    	   String text = four.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==five) 
+       { 
+    	   String text = five.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==six) 
+       { 
+    	   String text = six.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==seven) 
+       { 
+    	   String text = seven.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==eight) 
+       { 
+    	   String text = eight.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==nine) 
+       { 
+    	   String text = nine.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       else if(e.getSource()==zero) 
+       {
+    	   String text = zero.getText();
+           t1.setText(text);
+    	   //s3=s1+s2; 
+      //System.out.println(s3); 
+      // t3.setText(Integer.toString(s3)); 
+       } 
+       /*
+        else if(e.getSource()==sub) 
        { 
            s3=s1-s2; 
       System.out.println(s3); 
@@ -120,6 +195,7 @@ class second_calc extends JFrame implements ActionListener
       System.out.println(s3); 
        t3.setText(Integer.toString(s3)); 
        }
+      */
 } 
 
 
