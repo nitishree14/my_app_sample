@@ -13,7 +13,7 @@ class second_calc extends JFrame implements ActionListener
     JPanel panel1,panel2,panel3; 
     JButton add,sub,mul,div,one,two,three,four,five,six,seven,eight,nine,zero; 
     JTextField t1,t2,t3; 
-    First_Calc() 
+    second_calc() 
     { 
      panel1=new JPanel(new FlowLayout()); 
       panel2=new JPanel(new FlowLayout()); 
@@ -90,7 +90,9 @@ class second_calc extends JFrame implements ActionListener
     
     public void actionPerformed(ActionEvent e) 
    { 
-      int s1=Integer.parseInt(t1.getText()); 
+    	String text = one.getText();
+        t1.setText(text);
+      int s1=Integer.parseInt(t1.setText(text)); 
       int s2=Integer.parseInt(t2.getText()); 
       
       
