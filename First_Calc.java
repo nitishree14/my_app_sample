@@ -8,14 +8,16 @@ class First_Calc extends JFrame implements ActionListener
 { 
     int s1,s2,s3; 
    
-    JLabel l1,l2,result;
-    JPanel panel1,panel2; 
+    JLabel l1,l2,result,heading;
+    JPanel panel1,panel2,panel3; 
     JButton add,sub,mul,div; 
     JTextField t1,t2,t3; 
     First_Calc() 
     { 
      panel1=new JPanel(new FlowLayout()); 
       panel2=new JPanel(new FlowLayout()); 
+      panel3=new JPanel(new FlowLayout()); 
+      heading=new JLabel("CALCULATOR");
      l1=new JLabel("Number1"); 
      l2=new JLabel("Number2"); 
      result=new JLabel("Result"); 
@@ -32,19 +34,23 @@ class First_Calc extends JFrame implements ActionListener
      mul.addActionListener(this); 
      sub.addActionListener(this); 
      div.addActionListener(this); 
-   Component add1= panel1.add(l1); 
-  Component add2=  panel1.add(t1); 
-   Component add3= panel1.add(l2); 
-   Component add4= panel1.add(t2); 
-   Component add5= panel1.add(result); 
-    Component add6 = panel1. add(t3); 
-    Component add7 = panel2.   add(add); 
-    Component add8 = panel2.   add(sub); 
-    Component add9 = panel2.   add(mul); 
-    Component add10 = panel2.  add(div); 
-     add(panel1,BorderLayout.NORTH); 
-    add(panel2,BorderLayout.SOUTH); 
+     
+     Component add1= panel1.add(heading); 
+   Component add2= panel2.add(l1); 
+  Component add3=  panel2.add(t1); 
+   Component add4= panel2.add(l2); 
+   Component add5= panel2.add(t2); 
+   
+    Component add6 = panel3.   add(add); 
+    Component add7 = panel3.   add(sub); 
+    Component add8 = panel3.   add(mul); 
+    Component add9 = panel3.  add(div); 
+    Component add10= panel3.add(result); 
+    Component add11 = panel3. add(t3); 
     
+     add(panel1,BorderLayout.WEST); 
+    add(panel2,BorderLayout.NORTH); 
+    add(panel3,BorderLayout.SOUTH); 
      
        
      } 
