@@ -22,7 +22,7 @@ public class First_Calc extends Frame implements ActionListener {
 	     mul=new Button("*"); 
 	     div=new Button("/"); 
         l1.setBounds(10, 120, 80, 60);
-        l2.setBounds(60, 150, 80, 60);
+        l2.setBounds(10, 150, 80, 60);
         result.setBounds(110, 120, 150, 80);
         add.setBounds(10,200,40,30);
         sub.setBounds(60,200,40,30);
@@ -37,7 +37,7 @@ public class First_Calc extends Frame implements ActionListener {
 		add(t1);
 		add(t2);
 		add(l1);
-		add(l2)//adding button into frame  
+		add(l2);//adding button into frame  
 		setSize(300,300);//frame size 300 width and 300 height  
 		setLayout(null);//no layout manager  
 		setVisible(true);   
@@ -66,10 +66,10 @@ public class First_Calc extends Frame implements ActionListener {
 		
 		//register listener  
 		//b1.addActionListener(this);//passing current instance
-		b1.addActionListener(new ActionListener(){
+		add.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e) { 
-                 int a = Integer.parseInt(tf1.getText());
-                 int b = Integer.parseInt(tf2.getText()); 
+                 int a = Integer.parseInt(t1.getText());
+                 int b = Integer.parseInt(t2.getText()); 
                  int c = a + b; 
                  l1.setText("Their sum is = " + String.valueOf(c)); 
                                    }
