@@ -92,22 +92,29 @@ class second_calc extends JFrame implements ActionListener
    { 
     	//String text = one.getText();
         //t1.setText(text);
-     /* int s1=Integer.parseInt(t1.setText(text)); 
-      int s2=Integer.parseInt(t2.getText()); 
+     // int s1=Integer.parseInt(t1.setText(text)); 
+    //  int s2=Integer.parseInt(t2.getText()); 
       
-      */
+      
        if(e.getSource()==one) 
        { 
     	   String text = one.getText();
            t1.setText(text);
+           int s1=Integer.parseInt(t1.getText());
+           if(e.getSource()==one)
+           { 
+           t2.setText(text);
+           int s2=Integer.parseInt(t2.getText());}
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
        } 
+           /*
        else if(e.getSource()==two) 
        { 
     	   String text = two.getText();
            t1.setText(text);
+           int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -116,6 +123,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = three.getText();
            t1.setText(text);
+          // int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -124,6 +132,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = four.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -132,6 +141,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = five.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -140,6 +150,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = six.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -148,6 +159,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = seven.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -156,6 +168,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = eight.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -164,6 +177,7 @@ class second_calc extends JFrame implements ActionListener
        { 
     	   String text = nine.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
@@ -172,9 +186,17 @@ class second_calc extends JFrame implements ActionListener
        {
     	   String text = zero.getText();
            t1.setText(text);
+           //int s1=Integer.parseInt(t1.getText());
     	   //s3=s1+s2; 
       //System.out.println(s3); 
       // t3.setText(Integer.toString(s3)); 
+       } 
+       
+       else if(e.getSource()==add) 
+       { 
+           s3=s1+s2; 
+      System.out.println(s3); 
+       t3.setText(Integer.toString(s3)); 
        } 
        /*
         else if(e.getSource()==sub) 
