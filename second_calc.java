@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-class First_Calc extends JFrame implements ActionListener 
+class second_calc extends JFrame implements ActionListener 
 { 
     int s1,s2,s3; 
    
@@ -124,7 +124,7 @@ class First_Calc extends JFrame implements ActionListener
 
    
     public static void main(String[] args) { 
-    	First_Calc fc=new First_Calc(); 
+    	second_calc fc=new second_calc(); 
        fc.setBounds(200, 150, 120, 550); 
        //cl.setTitle("calculator"); 
        //cl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
